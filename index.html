@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coming Soon</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    /* Navbar */
+    nav {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px;
+    }
+
+    nav h1 {
+      font-size: 18px;
+      font-weight: 600;
+      color: #ffffff;
+      background-color: #ebeaea;
+      padding: 8px 16px;
+      border: 1px solid #555;
+      border-radius: 999px;
+    }
+
+    /* Animated Dot */
+    .dot {
+      width: 8px;
+      height: 8px;
+      background-color: #555;
+      border-radius: 50%;
+      animation: ping 1.5s infinite;
+    }
+
+    @keyframes ping {
+      0% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.5); opacity: 0.5; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    /* Main Content */
+    h2 {
+      font-size: 24px;
+      font-weight: 500;
+      color: #555;
+      letter-spacing: 1px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <h1>Anand</h1>
+    <div class="dot"></div>
+  </nav>
+
+  <!-- Main Content -->
+  <h2>Website Coming Soon</h2>
+
+</body>
+</html>
